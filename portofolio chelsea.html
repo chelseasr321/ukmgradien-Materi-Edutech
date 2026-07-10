@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Chelsea Shinta Rimbawani</title>
+
+    <link rel="stylesheet" href="portofolio.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="hero" id="home">
+
+        <nav>
+
+            <div class="logo">
+            Welcome to my portofolio Website
+            </div>
+
+            <ul>
+
+                <li><a href="#about">Tentang</a></li>
+
+                <li><a href="#education">Pendidikan</a></li>
+
+                <li><a href="#skills">Keahlian</a></li>
+
+                <li><a href="#portfolio">Portofolio</a></li>
+
+                <li><a href="#contact">Kontak</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <h3>Halo, Saya</h3>
+
+                <h1>Chelsea Shinta Rimbawani</h1>
+
+                <h2>Mahasiswa Teknik Informatika</h2>
+
+                <p>
+                    Mahasiswa aktif Program Studi Teknik Informatika Universitas Lampung
+                    yang memiliki minat pada pengembangan website, organisasi,
+                    dan pengembangan diri. Saya senang mempelajari hal baru,
+                    bekerja sama dalam tim, serta mengembangkan solusi yang
+                    bermanfaat melalui teknologi.
+                </p>
+
+                <a href="#portfolio" class="btn">
+                    Lihat Portofolio
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="foto.jpeg" alt="Foto Chelsea">
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section id="about">
+
+        <h2>Tentang Saya</h2>
+
+        <p>
+            Saya adalah mahasiswa aktif Program Studi Teknik Informatika Universitas Lampung.
+            Saya memiliki pengalaman dalam berbagai organisasi dan kepanitiaan yang
+            membentuk kemampuan dalam administrasi, komunikasi, kerja sama tim,
+            kepemimpinan, serta pemecahan masalah. Saya juga terbiasa menggunakan
+            Microsoft Office, Google Workspace, dan Canva untuk menunjang kegiatan
+            akademik maupun organisasi. Saya percaya bahwa pengalaman organisasi
+            dan semangat belajar merupakan bekal penting untuk terus berkembang
+            di bidang teknologi informasi.
+        </p>
+
+    </section>
+
+    <section id="education">
+
+        <h2>Pendidikan</h2>
+
+        <div class="education-container">
+
+            <div class="education-card">
+
+                <h3>Universitas Lampung</h3>
+
+                <p>Program Studi Teknik Informatika</p>
+
+                <span>2025 - Sekarang</span>
+
+            </div>
+
+            <div class="education-card">
+
+                <h3>SMA Negeri 2 Kotaagung</h3>
+
+                <span>2022 - 2025</span>
+
+            </div>
+
+            <div class="education-card">
+
+                <h3>SMP Negeri 1 Kotaagung Timur</h3>
+
+                <span>2019 - 2022</span>
+
+            </div>
+
+            <div class="education-card">
+
+                <h3>SD Negeri 1 Tanjung Anom</h3>
+
+                <span>2013 - 2019</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="skills">
+
+        <h2>Keahlian</h2>
+
+        <div class="skill-container">
+
+            <div class="skill-card">Microsoft Office</div>
+
+            <div class="skill-card">Google Workspace</div>
+
+            <div class="skill-card">Canva</div>
+
+            <div class="skill-card">Leadership</div>
+
+            <div class="skill-card">Teamwork</div>
+
+            <div class="skill-card">Public Speaking</div>
+
+            <div class="skill-card">Web Development</div>
+
+            <div class="skill-card">UI/UX Design</div>
+
+            <div class="skill-card">Figma</div>
+
+        </div>
+
+    </section>
+
+    <section id="portfolio">
+
+        <h2>Portofolio</h2>
+
+        <p class="section-text">
+            Berikut beberapa pengalaman organisasi dan proyek yang saya miliki.
+        </p>
+
+       <div class="filter">
+
+    <button class="active" onclick="filterProject('all', this)">
+        Semua
+    </button>
+
+    <button onclick="filterProject('organization', this)">
+        Organisasi
+    </button>
+
+    <button onclick="filterProject('project', this)">
+        Proyek
+    </button>
+
+</div>
+
+        <div class="projects">
+
+            <div class="project" data-category="organization">
+
+                <h3>Pengurus Himpunan Mahasiswa Teknik Elektro</h3>
+
+                <h4>Departemen Sosial dan Kewirausahaan</h4>
+
+                <p>
+                    Berkontribusi dalam pelaksanaan program kerja,
+                    administrasi organisasi, serta koordinasi berbagai
+                    kegiatan kemahasiswaan.
+                </p>
+
+            </div>
+
+            <div class="project" data-category="organization">
+
+                <h3>Anggota UKM Gradien Universitas Lampung</h3>
+
+                <h4>Anggota Aktif</h4>
+
+                <p>
+                    Aktif mengikuti kegiatan organisasi untuk meningkatkan
+                    kemampuan IT, dan kerja sama tim.
+                </p>
+
+            </div>
+
+           <div class="project" data-category="project">
+
+    <h3>Pengembangan Sistem IoT untuk Pemantauan Suhu Produksi Biogasolin RON 92</h3>
+
+    <p>
+        Mengembangkan sistem Internet of Things (IoT) berbasis ESP32 untuk
+        memantau suhu reaktor secara real-time pada proses produksi biogasolin
+        RON 92. Sistem dilengkapi sensor suhu, monitoring data, dan kontrol
+        suhu untuk meningkatkan efisiensi proses.
+    </p>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <h2>Hubungi Saya</h2>
+
+        <p>
+            Silakan isi nama Anda pada formulir berikut.
+        </p>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="nama"
+                placeholder="Masukkan nama Anda">
+
+            <button type="submit">
+
+                Kirim
+
+            </button>
+
+            <p id="warning"></p>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 Chelsea Shinta Rimbawani</p>
+
+    </footer>
+
+    <script src="portofolio.js"></script>
+
+</body>
+</html>
